@@ -1,0 +1,32 @@
+Palindrome check of a number using JavaScript<br><br>
+
+<html>
+
+	<script type="text/javascript">
+		
+		function isPalindrome(n)
+		{
+			var temp = n;
+			var reverseNumber = 0;
+
+			while (temp>0) {
+				reverseNumber = reverseNumber * 10 + (temp % 10);
+				temp = Math.floor(temp / 10);			
+			}
+
+			if(reverseNumber==n)
+				document.write(n + " is a Palindrome number");
+			else
+				document.write(n + " is not a Palindrome number");
+		}
+
+		
+		var myNumber = 1221;
+
+		isPalindrome(myNumber);
+
+	</script>
+
+	
+
+</html>

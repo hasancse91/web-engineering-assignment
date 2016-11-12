@@ -1,0 +1,23 @@
+Find the largest value of an Array in JavaScript<br><br>
+
+<html>
+
+
+	<script type="text/javascript">
+
+		var myArray  = [5, 6 , 7, -8, 6, 4];
+
+		maximum = myArray[0];
+
+		for(var i = 1; i<myArray.length; i++)
+		{
+			if(maximum<myArray[i])
+				maximum = myArray[i];
+		}
+
+		document.write("Maximum value is: " + maximum);
+		
+	</script>
+	
+
+</html>

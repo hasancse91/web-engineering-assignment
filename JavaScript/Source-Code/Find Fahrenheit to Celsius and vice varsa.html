@@ -1,0 +1,30 @@
+Find Fahrenheit to Celsius and vice varsa using JavaScript<br><br>
+
+<html>
+    
+    <script type="text/javascript">
+
+        function fahrenheit_to_celsius(value)
+        {
+            var celsius = 5/9*(value-32);
+            return celsius ;
+        }
+
+        function celsius_to_fahrenheit(value)
+        {
+            var fahrenheit = value*9/5+32;
+            return fahrenheit ;
+        }
+
+        var celsiusValue = 150;
+        var fahrenheitValue = 450;
+
+        document.write("Fahrenheit of " + celsiusValue + " is " + celsius_to_fahrenheit(celsiusValue) + "<br>");
+
+        document.write("Celsius of " + fahrenheitValue + " is " + fahrenheit_to_celsius(fahrenheitValue));
+        
+    </script>
+    
+
+
+</html>

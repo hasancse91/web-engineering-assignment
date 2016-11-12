@@ -1,0 +1,30 @@
+Prime Number checking program in JavaScript<br><br>
+
+<html>
+
+	<script type="text/javascript">
+
+		var item = 17;
+		var flag = true;
+
+		for(var i = 3; i<Math.sqrt(item); i+=2)
+		{
+			if(item%i==0)
+			{
+				flag = false;
+				break;
+			}
+		}
+
+		if(item==0 || item==1)
+			flag = false;
+
+		if(flag)
+			document.write(item + " is a Prime");
+		else
+			document.write(item + " is not a Prime");
+
+	</script>
+
+	
+</html>
