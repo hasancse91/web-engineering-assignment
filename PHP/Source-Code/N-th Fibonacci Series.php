@@ -11,16 +11,21 @@ Print the Fibonacci Series upto N-th item using PHP<br><br>
 		for($i = 3; $i<=$n; $i++)
 		{
 			$c = $a + $b;
-			$temp = $b;
+			echo $c." ";
+
+			$a = $b;
+			$b = $c;
+
+			/*$temp = $b;
 			$b = $c;
 			$a = $temp;
-
-			echo $c." ";
+*/
+			//echo $c." ";
 		}
 
 	}
 
-	$number = 10;
+	$number = 15;
 
 	printFibonacci($number);
 
